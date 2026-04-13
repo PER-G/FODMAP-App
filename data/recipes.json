@@ -1,0 +1,157 @@
+[
+  {
+    "id": "porridge-blueberry",
+    "name": "Hafer-Porridge mit Blaubeeren",
+    "nameEn": "Oat Porridge with Blueberries",
+    "mealType": "breakfast",
+    "fodmapRating": "green",
+    "prepTime": "10 Min.",
+    "servings": 1,
+    "tags": ["frühstück","vegetarisch","schnell","high-protein"],
+    "ingredients": [
+      {"name": "Haferflocken", "amount": "50g", "fodmapRating": "green"},
+      {"name": "Laktosefreie Milch", "amount": "200ml", "fodmapRating": "green"},
+      {"name": "Blaubeeren", "amount": "80g", "fodmapRating": "green"},
+      {"name": "Ahornsirup", "amount": "1 TL", "fodmapRating": "green"},
+      {"name": "Walnüsse", "amount": "15g", "fodmapRating": "green"}
+    ],
+    "steps": ["Haferflocken mit Milch aufkochen.","3-4 Min. köcheln lassen.","Mit Blaubeeren, Walnüssen und Ahornsirup toppen."],
+    "nutrients": {"calories":380,"protein":14,"carbs":52,"fat":12,"fiber":7}
+  },
+  {
+    "id": "scrambled-eggs-spinach",
+    "name": "Rührei mit Spinat und Paprika",
+    "nameEn": "Scrambled Eggs with Spinach & Pepper",
+    "mealType": "breakfast",
+    "fodmapRating": "green",
+    "prepTime": "10 Min.",
+    "servings": 1,
+    "tags": ["frühstück","high-protein","low-carb","schnell"],
+    "ingredients": [
+      {"name": "Eier", "amount": "3 Stück", "fodmapRating": "green"},
+      {"name": "Spinat", "amount": "50g", "fodmapRating": "green"},
+      {"name": "Paprika", "amount": "½ Stück", "fodmapRating": "green"},
+      {"name": "Butter", "amount": "10g", "fodmapRating": "green"},
+      {"name": "Schnittlauch", "amount": "nach Geschmack", "fodmapRating": "green"}
+    ],
+    "steps": ["Butter in Pfanne erhitzen.","Paprika kurz anbraten.","Spinat dazu, zusammenfallen lassen.","Eier verquirlen, dazugeben, stocken lassen.","Mit Schnittlauch servieren."],
+    "nutrients": {"calories":320,"protein":24,"carbs":5,"fat":23,"fiber":2}
+  },
+  {
+    "id": "rice-bowl-chicken",
+    "name": "Reis-Bowl mit Hähnchen und Gemüse",
+    "nameEn": "Rice Bowl with Chicken & Vegetables",
+    "mealType": "lunch",
+    "fodmapRating": "green",
+    "prepTime": "25 Min.",
+    "servings": 2,
+    "tags": ["mittagessen","high-protein","meal-prep"],
+    "ingredients": [
+      {"name": "Reis", "amount": "150g", "fodmapRating": "green"},
+      {"name": "Hähnchenbrust", "amount": "200g", "fodmapRating": "green"},
+      {"name": "Karotten", "amount": "100g", "fodmapRating": "green"},
+      {"name": "Zucchini", "amount": "1 Stück", "fodmapRating": "green"},
+      {"name": "Sojasauce", "amount": "2 EL", "fodmapRating": "green"},
+      {"name": "Knoblauchöl", "amount": "1 EL", "fodmapRating": "green"},
+      {"name": "Ingwer", "amount": "1 TL gerieben", "fodmapRating": "green"}
+    ],
+    "steps": ["Reis kochen.","Hähnchen in Knoblauchöl anbraten.","Gemüse dazu, 5 Min. braten.","Mit Sojasauce und Ingwer würzen.","Über Reis servieren."],
+    "nutrients": {"calories":480,"protein":38,"carbs":58,"fat":8,"fiber":4}
+  },
+  {
+    "id": "pasta-tomato-basil",
+    "name": "Pasta mit Tomaten-Basilikum-Sauce",
+    "nameEn": "Pasta with Tomato Basil Sauce",
+    "mealType": "dinner",
+    "fodmapRating": "yellow",
+    "prepTime": "20 Min.",
+    "servings": 2,
+    "tags": ["abendessen","vegetarisch","budget"],
+    "ingredients": [
+      {"name": "Glutenfreie Pasta", "amount": "200g", "fodmapRating": "green"},
+      {"name": "Dosentomaten", "amount": "400g", "fodmapRating": "green"},
+      {"name": "Knoblauchöl", "amount": "2 EL", "fodmapRating": "green"},
+      {"name": "Basilikum", "amount": "frisch", "fodmapRating": "green"},
+      {"name": "Parmesan", "amount": "30g", "fodmapRating": "green"},
+      {"name": "Olivenöl", "amount": "1 EL", "fodmapRating": "green"}
+    ],
+    "steps": ["Pasta kochen.","Knoblauchöl erhitzen, Tomaten dazu.","10 Min. köcheln.","Basilikum einrühren.","Pasta mit Sauce und Parmesan servieren."],
+    "nutrients": {"calories":420,"protein":16,"carbs":62,"fat":12,"fiber":5}
+  },
+  {
+    "id": "salmon-potato-greens",
+    "name": "Lachs mit Kartoffeln und Spinat",
+    "nameEn": "Salmon with Potatoes and Spinach",
+    "mealType": "dinner",
+    "fodmapRating": "green",
+    "prepTime": "30 Min.",
+    "servings": 2,
+    "tags": ["abendessen","high-protein","omega-3"],
+    "ingredients": [
+      {"name": "Lachsfilet", "amount": "2 Stück (à 150g)", "fodmapRating": "green"},
+      {"name": "Kartoffeln", "amount": "400g", "fodmapRating": "green"},
+      {"name": "Spinat", "amount": "150g", "fodmapRating": "green"},
+      {"name": "Olivenöl", "amount": "2 EL", "fodmapRating": "green"},
+      {"name": "Zitrone", "amount": "1 Stück", "fodmapRating": "green"},
+      {"name": "Dill", "amount": "frisch", "fodmapRating": "green"}
+    ],
+    "steps": ["Kartoffeln kochen.","Lachs in Olivenöl anbraten (je Seite 4 Min.).","Spinat kurz in Pfanne welken.","Mit Zitrone und Dill servieren."],
+    "nutrients": {"calories":520,"protein":42,"carbs":38,"fat":22,"fiber":5}
+  },
+  {
+    "id": "tofu-stir-fry",
+    "name": "Tofu-Gemüse-Pfanne",
+    "nameEn": "Tofu Vegetable Stir-Fry",
+    "mealType": "lunch",
+    "fodmapRating": "green",
+    "prepTime": "20 Min.",
+    "servings": 2,
+    "tags": ["mittagessen","vegan","high-protein","schnell"],
+    "ingredients": [
+      {"name": "Fester Tofu", "amount": "200g", "fodmapRating": "green"},
+      {"name": "Paprika", "amount": "1 Stück", "fodmapRating": "green"},
+      {"name": "Zucchini", "amount": "1 Stück", "fodmapRating": "green"},
+      {"name": "Karotten", "amount": "100g", "fodmapRating": "green"},
+      {"name": "Sojasauce", "amount": "2 EL", "fodmapRating": "green"},
+      {"name": "Knoblauchöl", "amount": "1 EL", "fodmapRating": "green"},
+      {"name": "Reis", "amount": "150g", "fodmapRating": "green"}
+    ],
+    "steps": ["Tofu würfeln und knusprig braten.","Gemüse im Wok anbraten.","Mit Sojasauce und Knoblauchöl würzen.","Mit Reis servieren."],
+    "nutrients": {"calories":410,"protein":26,"carbs":50,"fat":12,"fiber":6}
+  },
+  {
+    "id": "banana-oat-smoothie",
+    "name": "Bananen-Hafer-Smoothie",
+    "nameEn": "Banana Oat Smoothie",
+    "mealType": "snack",
+    "fodmapRating": "green",
+    "prepTime": "5 Min.",
+    "servings": 1,
+    "tags": ["snack","schnell","high-protein"],
+    "ingredients": [
+      {"name": "Unreife Banane", "amount": "1 Stück", "fodmapRating": "green"},
+      {"name": "Haferflocken", "amount": "30g", "fodmapRating": "green"},
+      {"name": "Laktosefreier Joghurt", "amount": "150g", "fodmapRating": "green"},
+      {"name": "Erdnussbutter", "amount": "1 EL", "fodmapRating": "green"}
+    ],
+    "steps": ["Alles in einen Mixer geben.","30 Sekunden mixen.","Sofort genießen."],
+    "nutrients": {"calories":340,"protein":18,"carbs":42,"fat":12,"fiber":5}
+  },
+  {
+    "id": "rice-cake-snack",
+    "name": "Reiswaffeln mit Erdnussbutter",
+    "nameEn": "Rice Cakes with Peanut Butter",
+    "mealType": "snack",
+    "fodmapRating": "green",
+    "prepTime": "2 Min.",
+    "servings": 1,
+    "tags": ["snack","schnell","budget"],
+    "ingredients": [
+      {"name": "Reiswaffeln", "amount": "2 Stück", "fodmapRating": "green"},
+      {"name": "Erdnussbutter", "amount": "2 EL", "fodmapRating": "green"},
+      {"name": "Banane (unreif)", "amount": "½ Stück", "fodmapRating": "green"}
+    ],
+    "steps": ["Reiswaffeln mit Erdnussbutter bestreichen.","Bananenscheiben darauf legen."],
+    "nutrients": {"calories":280,"protein":10,"carbs":32,"fat":14,"fiber":3}
+  }
+]

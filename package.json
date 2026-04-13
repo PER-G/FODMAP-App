@@ -1,0 +1,13 @@
+{
+  "name": "fodmap-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "FODMAP Analyse App — Lebensmittel, Rezepte und Mahlzeiten bewerten",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "foodCategories": [
+    {"id": "fruit", "name": "Obst", "nameEn": "Fruit"},
+    {"id": "vegetable", "name": "Gemüse", "nameEn": "Vegetables"},
+    {"id": "grain", "name": "Getreide & Beilagen", "nameEn": "Grains & Sides"},
+    {"id": "dairy", "name": "Milchprodukte", "nameEn": "Dairy"},
+    {"id": "protein", "name": "Proteinquellen", "nameEn": "Protein"},
+    {"id": "other", "name": "Sonstiges", "nameEn": "Other"}
+  ],
+  "mealTypes": [
+    {"id": "breakfast", "name": "Frühstück", "nameEn": "Breakfast"},
+    {"id": "lunch", "name": "Mittagessen", "nameEn": "Lunch"},
+    {"id": "dinner", "name": "Abendessen", "nameEn": "Dinner"},
+    {"id": "snack", "name": "Snack", "nameEn": "Snack"}
+  ],
+  "dietaryFilters": [
+    {"id": "highProtein", "name": "High Protein", "nameEn": "High Protein"},
+    {"id": "lowCalorie", "name": "Kalorienarm", "nameEn": "Low Calorie"},
+    {"id": "vegetarian", "name": "Vegetarisch", "nameEn": "Vegetarian"},
+    {"id": "vegan", "name": "Vegan", "nameEn": "Vegan"},
+    {"id": "glutenFree", "name": "Glutenfrei", "nameEn": "Gluten Free"},
+    {"id": "budget", "name": "Budget", "nameEn": "Budget"}
+  ]
+}

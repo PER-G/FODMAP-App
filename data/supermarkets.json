@@ -1,0 +1,85 @@
+{
+  "chains": [
+    {
+      "id": "rewe",
+      "name": "REWE",
+      "type": "full-range",
+      "strengths": ["Große Auswahl laktosefreier Produkte", "REWE Bio Eigenmarke", "REWE frei von Reihe"],
+      "fodmapFriendlyBrands": ["MinusL", "REWE frei von", "REWE Bio", "Alpro"],
+      "categories": ["laktosefrei", "glutenfrei", "bio", "proteinreich"]
+    },
+    {
+      "id": "edeka",
+      "name": "EDEKA",
+      "type": "full-range",
+      "strengths": ["Gute Bio-Auswahl", "EDEKA Bio Eigenmarke", "Regionale Produkte"],
+      "fodmapFriendlyBrands": ["MinusL", "EDEKA Bio", "Alpro", "Schär"],
+      "categories": ["laktosefrei", "glutenfrei", "bio"]
+    },
+    {
+      "id": "kaufland",
+      "name": "Kaufland",
+      "type": "full-range",
+      "strengths": ["Großes Sortiment", "K-Classic laktosefrei", "Günstige Alternativen"],
+      "fodmapFriendlyBrands": ["MinusL", "K-free", "K-Classic Bio"],
+      "categories": ["laktosefrei", "glutenfrei", "budget"]
+    },
+    {
+      "id": "aldi",
+      "name": "Aldi (Nord/Süd)",
+      "type": "discount",
+      "strengths": ["Günstige laktosefreie Eigenmarken", "GutBio Reihe", "Proteinprodukte"],
+      "fodmapFriendlyBrands": ["GutBio", "laktosefrei Eigenmarke", "MILSANI laktosefrei"],
+      "categories": ["laktosefrei", "budget", "bio"]
+    },
+    {
+      "id": "lidl",
+      "name": "Lidl",
+      "type": "discount",
+      "strengths": ["Günstiger Preis", "Bioland Eigenmarke", "Freeway Proteindrinks"],
+      "fodmapFriendlyBrands": ["Bioland", "Milbona laktosefrei", "Lidl Protein"],
+      "categories": ["laktosefrei", "budget", "proteinreich"]
+    },
+    {
+      "id": "dm",
+      "name": "dm Drogeriemarkt",
+      "type": "health",
+      "strengths": ["dmBio Sortiment", "Glutenfreie Spezialprodukte", "Nahrungsergänzung"],
+      "fodmapFriendlyBrands": ["dmBio", "Schär", "Alnavit", "Alnatura"],
+      "categories": ["glutenfrei", "bio", "reformhaus", "nahrungsergänzung"]
+    },
+    {
+      "id": "rossmann",
+      "name": "Rossmann",
+      "type": "health",
+      "strengths": ["enerBiO Eigenmarke", "Reformhaus-Produkte", "Proteinriegel"],
+      "fodmapFriendlyBrands": ["enerBiO", "Schär", "Alnavit"],
+      "categories": ["glutenfrei", "bio", "proteinreich"]
+    },
+    {
+      "id": "alnatura",
+      "name": "Alnatura",
+      "type": "organic",
+      "strengths": ["Komplett Bio", "Große glutenfreie Auswahl", "Viele pflanzliche Alternativen"],
+      "fodmapFriendlyBrands": ["Alnatura", "Schär", "Alpro", "Alnavit"],
+      "categories": ["bio", "glutenfrei", "laktosefrei", "vegan"]
+    },
+    {
+      "id": "denns",
+      "name": "denn's Biomarkt",
+      "type": "organic",
+      "strengths": ["Bio-Vollsortiment", "Spezialprodukte", "Fachberatung"],
+      "fodmapFriendlyBrands": ["Alnatura", "Schär", "Alnavit", "Bauckhof"],
+      "categories": ["bio", "glutenfrei", "laktosefrei", "reformhaus"]
+    }
+  ],
+  "categoryMapping": {
+    "laktosefrei": ["rewe", "edeka", "kaufland", "aldi", "lidl", "dm", "alnatura", "denns"],
+    "glutenfrei": ["dm", "rossmann", "alnatura", "denns", "rewe", "edeka"],
+    "bio": ["alnatura", "denns", "dm", "rewe", "edeka", "aldi", "lidl"],
+    "proteinreich": ["rewe", "edeka", "lidl", "aldi", "rossmann"],
+    "budget": ["aldi", "lidl", "kaufland"],
+    "reformhaus": ["dm", "rossmann", "alnatura", "denns"],
+    "vegan": ["alnatura", "denns", "rewe", "edeka"]
+  }
+}

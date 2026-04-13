@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0f0f1a">
+  <meta name="description" content="FODMAP Analyse App — Lebensmittel, Rezepte und Mahlzeiten bewerten">
+  <title>FODMAP Analyse</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/components.css">
+</head>
+<body>
+  <!-- Login Screen -->
+  <div id="login-screen" class="login-screen">
+    <div class="login-card">
+      <div class="login-logo">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <circle cx="24" cy="24" r="22" stroke="var(--accent)" stroke-width="2" fill="none"/>
+          <path d="M16 24c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8" stroke="var(--fodmap-green)" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="24" cy="24" r="3" fill="var(--accent)"/>
+        </svg>
+      </div>
+      <h1 class="login-title">FODMAP Analyse</h1>
+      <p class="login-subtitle" data-i18n="loginSubtitle">Bitte anmelden</p>
+      <form id="login-form" class="login-form" autocomplete="off">
+        <div class="input-group">
+          <label for="login-user" data-i18n="loginUser">Benutzer</label>
+          <input type="text" id="login-user" name="user" required autocomplete="username" autofocus>
+        </div>
+        <div class="input-group">
+          <label for="login-pass" data-i18n="loginPassword">Passwort</label>
+          <input type="password" id="login-pass" name="password" required autocomplete="current-password">
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" id="login-btn">
+          <span data-i18n="loginButton">Anmelden</span>
+        </button>
+        <p id="login-error" class="login-error" hidden></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- App Shell (hidden until logged in) -->
+  <div id="app" class="app" hidden>
+    <header class="app-header">
+      <div class="header-left">
+        <svg class="header-logo" width="28" height="28" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <circle cx="24" cy="24" r="22" stroke="var(--accent)" stroke-width="2" fill="none"/>
+          <path d="M16 24c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8" stroke="var(--fodmap-green)" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="24" cy="24" r="3" fill="var(--accent)"/>
+        </svg>
+        <span class="header-title">FODMAP</span>
+      </div>
+      <div class="header-right">
+        <button id="lang-toggle" class="btn-icon lang-toggle" aria-label="Switch language" title="Sprache / Language">
+          <span id="lang-label">EN</span>
+        </button>
+        <button id="logout-btn" class="btn-icon" aria-label="Abmelden" title="Abmelden">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="content" class="app-content"></main>
+
+    <nav id="bottom-nav" class="bottom-nav" role="navigation" aria-label="Hauptnavigation">
+      <a href="#/dashboard" class="nav-item" data-view="dashboard">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span data-i18n="navDashboard">Start</span>
+      </a>
+      <a href="#/analyze" class="nav-item" data-view="analyze">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <span data-i18n="navAnalyze">Analyse</span>
+      </a>
+      <a href="#/recipes" class="nav-item" data-view="recipes">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+        <span data-i18n="navRecipes">Rezepte</span>
+      </a>
+      <a href="#/history" class="nav-item" data-view="history">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span data-i18n="navHistory">Verlauf</span>
+      </a>
+      <a href="#/more" class="nav-item" data-view="more">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+        <span data-i18n="navMore">Mehr</span>
+      </a>
+    </nav>
+  </div>
+
+  <!-- Disclaimer Modal -->
+  <div id="disclaimer-modal" class="modal-overlay" hidden>
+    <div class="modal-card">
+      <h2 data-i18n="disclaimerTitle">Wichtiger Hinweis</h2>
+      <div class="modal-body">
+        <p data-i18n="disclaimerText1">Diese App bietet eine Orientierungshilfe zur FODMAP-Vertraeglichkeit von Lebensmitteln, Rezepten und Mahlzeiten.</p>
+        <p data-i18n="disclaimerText2">Sie ersetzt keine aerztliche Beratung oder professionelle Ernaehrungsberatung. FODMAP-Toleranzen sind individuell verschieden.</p>
+        <p data-i18n="disclaimerText3">Die Einschaetzungen basieren auf allgemeinen Daten und KI-Analyse. Bei gesundheitlichen Beschwerden wenden Sie sich bitte an einen Arzt oder eine qualifizierte Ernaehrungsberatung.</p>
+      </div>
+      <button id="disclaimer-accept" class="btn btn-primary btn-full" data-i18n="disclaimerAccept">Verstanden</button>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
