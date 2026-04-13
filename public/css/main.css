@@ -558,7 +558,7 @@ textarea::placeholder {
 .flex-wrap { flex-wrap: wrap; }
 .items-center { align-items: center; }
 .justify-between { justify-content: space-between; }
-.hidden { display: none !important; }
+.hidden, [hidden] { display: none !important; }
 
 /* --- Tablet+ --- */
 @media (min-width: 768px) {
